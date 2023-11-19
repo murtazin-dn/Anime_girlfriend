@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Anime girlfriend</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_click">Update click</string>
+    <string name="level">lvl</string>
+    <string name="update_char">Update character</string>
+    <string name="voice">Voice</string>
+    <string name="characters">Characters</string>
+</resources>
