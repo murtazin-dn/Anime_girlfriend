@@ -5,6 +5,6 @@ import com.example.animegirlfriend.game.model.GameDataModel
 
 class RemoveObserverUseCase(private val controller: IGameController) {
     fun execute(action: (GameDataModel) -> Unit) {
-        controller.addObserver(action)
+        controller.removeObserver(action)
     }
 }

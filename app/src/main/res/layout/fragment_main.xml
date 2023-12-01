@@ -40,11 +40,11 @@
 
         <ImageView
             android:id="@+id/img_girl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_girl1"
-            android:layout_weight="1"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/girl1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,7 +62,8 @@
             android:layout_weight="0.5"
             app:cardCornerRadius="10dp"
             app:strokeColor="@color/white"
-            app:strokeWidth="5dp">
+            app:strokeWidth="5dp"
+            app:rippleColor="@android:color/transparent">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -155,7 +156,8 @@
             android:layout_weight="0.5"
             app:cardCornerRadius="10dp"
             app:strokeColor="@color/white"
-            app:strokeWidth="5dp">
+            app:strokeWidth="5dp"
+            app:rippleColor="@android:color/transparent">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -255,7 +257,8 @@
             android:layout_weight="0.5"
             app:cardCornerRadius="10dp"
             app:strokeColor="@color/white"
-            app:strokeWidth="5dp">
+            app:strokeWidth="5dp"
+            app:rippleColor="@android:color/transparent">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -284,70 +287,6 @@
                         android:text="@string/characters"
                         android:textColor="@color/white"
                         android:textSize="22sp" />
-
-                </LinearLayout>
-
-            </FrameLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/btn_voice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="0.5"
-            app:cardCornerRadius="10dp"
-            app:strokeColor="@color/white"
-            app:strokeWidth="5dp">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="70dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_background3" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp"
-                        android:fontFamily="@font/chewy"
-                        android:gravity="end"
-                        android:text="@string/voice"
-                        android:textColor="@color/white"
-                        android:textSize="22sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="10dp"
-                        android:fontFamily="@font/chewy"
-                        android:gravity="end"
-                        android:text="250"
-                        android:textColor="@color/white"
-                        android:textSize="18sp" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/ic_coin" />
-
 
                 </LinearLayout>
 

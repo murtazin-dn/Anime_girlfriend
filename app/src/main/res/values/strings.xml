@@ -7,4 +7,6 @@
     <string name="update_char">Update character</string>
     <string name="voice">Voice</string>
     <string name="characters">Characters</string>
+    <string name="select">select</string>
+    <string name="selected">selected</string>
 </resources>

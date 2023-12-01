@@ -1,6 +1,7 @@
 package com.example.animegirlfriend.game.core
 
 import android.util.Log
+import com.example.animegirlfriend.R
 import com.example.animegirlfriend.game.model.GameDataModel
 import com.example.animegirlfriend.game.model.GirlModel
 import com.example.animegirlfriend.utils.SharedPreferencesGameData
@@ -98,23 +99,19 @@ class GameController @Inject constructor(
 
         priceUpGirl = 100
         girls = listOf(
-            GirlModel("1", true),
-            GirlModel("2"),
-            GirlModel("3"),
-            GirlModel("4"),
-            GirlModel("5"),
-            GirlModel("6"),
-            GirlModel("7"),
-            GirlModel("8"),
-            GirlModel("9"),
-            GirlModel("10"),
-            GirlModel("11"),
-            GirlModel("12"),
-            GirlModel("13"),
-            GirlModel("14"),
-            GirlModel("15"),
-            GirlModel("16"),
-            GirlModel("17")
+            GirlModel(R.drawable.girl1, true),
+            GirlModel(R.drawable.girl2),
+            GirlModel(R.drawable.girl3),
+            GirlModel(R.drawable.girl4),
+            GirlModel(R.drawable.girl5),
+            GirlModel(R.drawable.girl6),
+            GirlModel(R.drawable.girl7),
+            GirlModel(R.drawable.girl8),
+            GirlModel(R.drawable.girl9),
+            GirlModel(R.drawable.girl10),
+            GirlModel(R.drawable.girl11),
+            GirlModel(R.drawable.girl12),
+            GirlModel(R.drawable.girl13)
         )
     }
 

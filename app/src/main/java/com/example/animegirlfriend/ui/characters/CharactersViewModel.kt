@@ -1,30 +1,21 @@
-package com.example.animegirlfriend.ui.mainfragment
+package com.example.animegirlfriend.ui.characters
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.animegirlfriend.domain.game.AddObserverUseCase
-import com.example.animegirlfriend.domain.game.ClickUseCase
 import com.example.animegirlfriend.domain.game.RemoveObserverUseCase
 import com.example.animegirlfriend.domain.game.SetGirlUseCase
-import com.example.animegirlfriend.domain.game.UpdateCharUseCase
-import com.example.animegirlfriend.domain.game.UpdateClickUseCase
-import com.example.animegirlfriend.game.core.IGameController
 import com.example.animegirlfriend.game.model.GameDataModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class MainFragmentViewModel @Inject constructor(
+class CharactersViewModel @Inject constructor(
     private val addObserverUseCase: AddObserverUseCase,
     private val removeObserverUseCase: RemoveObserverUseCase,
-    private val clickUseCase: ClickUseCase,
-    private val updateCharUseCase: UpdateCharUseCase,
-    private val updateClickUseCase: UpdateClickUseCase
-): ViewModel() {
-
-    private val TAG = this.javaClass.name.toString()
+    private val setGirlUseCase: SetGirlUseCase
+) : ViewModel() {
 
     private val _gameDataLiveData = MutableLiveData<GameDataModel>()
     val gameDataLiveData: LiveData<GameDataModel> get() = _gameDataLiveData
@@ -33,19 +24,16 @@ class MainFragmentViewModel @Inject constructor(
         _gameDataLiveData.value = gameData
     }
 
+    fun setGirl(index: Int) = setGirlUseCase.execute(index)
+
     init {
         addObserverUseCase.execute(::updateData)
     }
-
-    fun click() {
-        clickUseCase.execute()
-        Log.e(TAG, "click")
-    }
-    fun updateChar() = updateCharUseCase.execute()
-    fun updateClick() = updateClickUseCase.execute()
 
     override fun onCleared() {
         removeObserverUseCase.execute(::updateData)
         super.onCleared()
     }
+
+
 }
