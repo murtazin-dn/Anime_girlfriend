@@ -41,12 +41,14 @@ class CharactersFragment : Fragment() {
         viewModel.gameDataLiveData.observe(viewLifecycleOwner){ gameData ->
             val girls = mutableListOf<RvGirlModel>()
             gameData.girls.forEachIndexed{i, girl ->
-                girls.add(RvGirlModel(
+                girls.add(
+                    RvGirlModel(
                     id = i,
                     isOpen = girl.isOpen,
                     img = girl.img,
                     isSelected = (i == gameData.curGirl)
-                ))
+                )
+                )
             }
             adapter.girls = girls
             binding.rvCharacters.scrollToPosition(gameData.curGirl)
@@ -56,6 +58,9 @@ class CharactersFragment : Fragment() {
             orientation = LinearLayoutManager.HORIZONTAL
         }
         PagerSnapHelper().attachToRecyclerView(binding.rvCharacters)
+        binding.btnClose.setOnClickListener{
+            findNavController().popBackStack()
+        }
     }
 
 

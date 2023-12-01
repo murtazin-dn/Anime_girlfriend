@@ -19,26 +19,17 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/ic_close"/>
-        <ImageView
-            android:id="@+id/btn_back"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/ic_arrow_left"/>
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/chewy"
+            android:layout_weight="1"
+            android:fontFamily="@font/maki_sans"
+            android:gravity="center"
             android:text="@string/characters"
             android:textColor="@color/white"
             android:textSize="45sp" />
-        <ImageView
-            android:id="@+id/btn_next"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:src="@drawable/ic_arrow_right"/>
-
 
 
     </LinearLayout>

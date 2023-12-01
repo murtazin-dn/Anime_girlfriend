@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Аниме подружка</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_click">Улучшить \nклик</string>
+    <string name="level">lvl</string>
+    <string name="update_char">Улучшить персонажа</string>
+    <string name="voice">Голос</string>
+    <string name="characters">Персонажи</string>
+    <string name="select">Выбрать</string>
+    <string name="selected">Выбрано</string>
+</resources>

@@ -24,7 +24,7 @@ class GameController @Inject constructor(
 
     private val TAG = this.toString()
 
-    private var money = 0
+    private var money: Long = 0
     private var priceUpClick = 0
     private var updateClickCount = 0
     private val updateClickRate = 1.2

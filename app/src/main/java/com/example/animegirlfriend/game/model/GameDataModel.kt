@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class GameDataModel(
-    val money: Int,
+    val money: Long,
     val priceUpClick: Int,
     val updateClickCount: Int,
     val clickAmount: Int,
